@@ -1,0 +1,27 @@
+[data-id="text"],
+.game-container {
+  display: none;
+}
+
+.difficulty-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.btns-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.btns-wrapper button {
+  padding: 8px 15px;
+  font-size: 20px;
+}

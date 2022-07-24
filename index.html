@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <a href="" class="navbar-brand text-center">Typing game</a>
+    </nav>
+
+    <div class="container-fluid difficulty-message">
+        <div>
+            <h2>Choose difficulty</h2>
+            <p>Remember, computers are infallible</p>
+        </div>
+        <div class="btns-wrapper">
+            <button class="btn btn-primary" data-type="easy">
+                Easy
+            </button>
+            <button class="btn btn-warning" data-type="medium">
+                Medium
+            </button>
+            <button class="btn btn-danger" data-type="hard">
+                Hard
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 game-container">
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Player
+                    </div>
+                    <div class="card-body">
+                        <textarea name="name" rows="8" cols="80" class="form-control" data-id="player-area"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <button class="form-control btn btn-warning" data-id="player-position">Position</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Computer 1
+                    </div>
+                    <div class="card-body">
+                        <textarea name="name" rows="8" cols="80" class="form-control"
+                            data-id="computer1-area"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <button class="form-control btn btn-warning" data-id="computer1-position">Position</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Computer 2
+                    </div>
+                    <div class="card-body">
+                        <textarea name="name" rows="8" cols="80" class="form-control"
+                            data-id="computer2-area"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <button class="form-control btn btn-warning" data-id="computer2-position">Position</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Computer 3
+                    </div>
+                    <div class="card-body">
+                        <textarea name="name" rows="8" cols="80" class="form-control"
+                            data-id="computer3-area"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <button class="form-control btn btn-warning" data-id="computer3-position">Position</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <button class="form-control btn btn-success" data-id="start-btn">START</button>
+
+                <h2 class="text-center" data-id="text">Saying</h2>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
