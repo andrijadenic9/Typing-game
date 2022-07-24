@@ -3,6 +3,23 @@
   display: none;
 }
 
+[data-id="start-btn"]{
+  font-size: 18px;
+}
+
+[data-id="start-btn"]:hover{
+  background-color: #338b47;
+}
+
+[data-id="start-btn"]:focus,
+[data-id="start-btn"]:active {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .difficulty-message {
   position: absolute;
   top: 50%;

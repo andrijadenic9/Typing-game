@@ -47,6 +47,7 @@ startBtn.addEventListener("click", startTimer);
 
 // * START COUNTING WHEN CLICK BUTTON
 function startTimer() {
+	startBtn.removeEventListener('click', startTimer);
 	let counter = 5;
 	startBtn.innerHTML = counter;
 
